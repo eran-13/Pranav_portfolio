@@ -1,0 +1,22 @@
+{
+  "name": "Creative Portfolio",
+  "short_name": "Portfolio",
+  "description": "Visual storyteller specializing in photography, videography, and post-production",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "200x200",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#0a0a0f",
+  "display": "standalone",
+  "start_url": "/"
+}
+
