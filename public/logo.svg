@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B855FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00E5FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF2D9E;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowLarge">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="hsl(240, 10%, 8%)" />
+  
+  <!-- Camera/Frame icon with neon gradient -->
+  <g filter="url(#glowLarge)">
+    <!-- Outer frame -->
+    <rect x="50" y="60" width="100" height="80" rx="6" fill="none" stroke="url(#neonGradient)" stroke-width="8" />
+    
+    <!-- Inner frame detail -->
+    <rect x="62" y="72" width="76" height="56" rx="3" fill="none" stroke="url(#neonGradient)" stroke-width="4" opacity="0.6" />
+    
+    <!-- Lens circle -->
+    <circle cx="100" cy="100" r="20" fill="none" stroke="url(#neonGradient)" stroke-width="6" />
+    <circle cx="100" cy="100" r="10" fill="url(#neonGradient)" opacity="0.8" />
+    
+    <!-- Top flash detail -->
+    <rect x="80" y="60" width="40" height="10" rx="3" fill="url(#neonGradient)" opacity="0.7" />
+  </g>
+</svg>
+
